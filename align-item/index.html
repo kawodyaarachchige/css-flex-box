@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Align Item</title>
+</head>
+<body>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        padding: 90px;
+        align-items: center;
+
+    }
+
+    .box5, .box6, .box7, .box4 {
+        padding: 30px;
+        align-items: center;
+
+    }
+
+    .box5 {
+        background-color: #c175c9;
+        font-size: 100px;
+    }
+
+    .box6 {
+        background-color: #f85672;
+        font-size: 80px;
+    }
+
+    .box7 {
+        background-color: #30e36e;
+        font-size: 150px;
+    }
+
+    .box1 {
+        background-color: #c175c9;
+    }
+
+    .box2 {
+        background-color: #f85672;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+    }
+
+    .flexbox {
+        border: 9px solid black;
+        display: flex;
+        height: 300px;
+        align-items: flex-start;
+    }
+
+    .flexbox1 {
+        border: 9px solid black;
+        display: flex;
+        height: 300px;
+        align-items: flex-end;
+    }
+
+    .flexbox2 {
+        border: 9px solid black;
+        display: flex;
+        height: 300px;
+        align-items: center;
+    }
+
+    .flexbox3 {
+        border: 9px solid black;
+        display: flex;
+        height: 300px;
+        align-items: stretch;
+    }
+
+    .flexbox4 {
+        border: 9px solid black;
+        display: flex;
+        height: 300px;
+        align-items: baseline;
+    }
+</style>
+
+<h1 style="text-align: center"> flex-start</h1>
+<h3 style="text-align: center">items are aligned at the start of the container's cross axis.</h3>
+<div class="flexbox">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h1 style="text-align: center"> flex-end</h1>
+<h3 style="text-align: center">items are aligned at the end of the container's cross axis.</h3>
+<div class="flexbox1">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h1 style="text-align: center"> flex-center</h1>
+<h3 style="text-align: center">items are centered in the container's cross axis.</h3>
+<div class="flexbox2">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h1 style="text-align: center"> flex-stretch</h1>
+<h3 style="text-align: center">items are stretched to fill the container's cross axis.</h3>
+<div class="flexbox3">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h1 style="text-align: center"> flex-Baseline</h1>
+<h3 style="text-align: center">Items are aligned such that their baselines align.</h3>
+<div class="flexbox4">
+    <div class="box5">1</div>
+    <div class="box6">2</div>
+    <div class="box7">3</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Direction</title>
+</head>
+<body>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        padding: 10px;
+
+
+    }
+
+    .box1 {
+        background-color: #c175c9;
+    }
+
+    .box2 {
+        background-color: #f85672;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+    }
+
+    .box4 {
+        background-color: rgba(91, 33, 63, 0.53);
+    }
+
+    .flexbox {
+        border: 2px solid black;
+        display: flex;
+        /* available width fullly explained , by default it is row*/
+        flex-direction: row; /*default*/
+
+    }
+
+    .flexbox1 {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .flexbox2 {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .flexbox3 {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+</style>
+
+<h2 style="text-align: center">Direction-Row</h2>
+<h3 style="text-align: center">This is the default value. It arranges the items along the main axis horizontally from
+    left to right.</h3>
+<div class="flexbox">
+    <div class="box1">145 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci, autem dolorem
+        doloribus eius esse explicabo ipsam iste magnam nulla officiis, perferendis qui quos sequi sunt, voluptas
+        voluptatem voluptates? Autem blanditiis dolore iste rem? Accusamus, beatae deleniti deserunt dolor ducimus
+        expedita ipsa labore, maiores perferendis, repellendus sit tempora ullam? Eveniet illum libero neque quaerat
+        vitae! Accusamus dicta, magni odio reiciendis repellat rerum! Animi aut cum excepturi itaque, iure quae vero
+        voluptates? Blanditiis cum cupiditate eius ex, fugiat ipsa itaque nam natus nemo neque non numquam odio ratione
+        recusandae sequi, vel veritatis. Maxime, ratione sit! A alias amet aperiam, atque, aut blanditiis cumque
+        deserunt harum illo ipsum laboriosam modi molestiae nostrum odit officia officiis possimus quae ratione tempora
+        veniam! Amet beatae, consectetur dolorem doloremque eius esse est fugiat inventore labore mollitia officiis
+        quidem rem reprehenderit sit, sunt tempore veritatis! Alias aut consequatur cumque delectus dolores doloribus
+        est impedit itaque molestias, odio praesentium recusandae sint totam vel veritatis. Ab consectetur consequuntur
+        cupiditate deleniti dolores dolorum enim et eum eveniet libero natus nostrum omnis perferendis quas
+        reprehenderit, sequi voluptatibus? Ad aperiam aspernatur cum eius esse expedita laborum maiores nihil odit
+        officia porro recusandae rem unde, veritatis voluptatum? Beatae nam perspiciatis soluta voluptatum? Aperiam ex
+        nulla pariatur praesentium quasi. A ab accusamus aliquam autem beatae consequuntur dicta error eum expedita
+        fuga, harum in molestias nam necessitatibus nisi, optio perferendis quae quibusdam quod quos sed similique velit
+        vero! Cum illo nobis totam vel. Eos eum iste placeat ratione repudiandae! Aliquam blanditiis consectetur
+        dignissimos error illum, iusto nostrum odio reiciendis! Aliquam, asperiores corporis debitis delectus deserunt
+        dolorem doloremque dolores ea eligendi enim et exercitationem fugit hic incidunt iure minima molestias nesciunt
+        non placeat provident quae quaerat quasi reprehenderit sapiente sequi similique soluta tempora tempore tenetur
+        vel vero vitae voluptas voluptatem? Amet cupiditate dolore doloremque doloribus in incidunt quibusdam quod
+        recusandae suscipit voluptatem. Aliquam animi architecto, at autem debitis eligendi enim eveniet fugit harum
+        ipsum iure laborum omnis optio provident reprehenderit sunt temporibus veniam. Beatae blanditiis corporis dolor
+        dolorem eos explicabo illo iste, magni, nemo nisi optio perferendis, provident quam quidem sit! Assumenda culpa
+        distinctio dolore, exercitationem facilis id, impedit ipsum minima molestias nam necessitatibus nostrum porro
+        qui quisquam quod quos recusandae repellat rerum saepe tenetur. Ab accusamus alias assumenda, cum cumque
+        doloremque earum excepturi illum ipsa, ipsum minima mollitia perspiciatis porro possimus quae quas quasi
+        quisquam quod, reprehenderit sit soluta vel vero voluptatem? A aliquam consequatur deserunt eaque eos error,
+        eveniet fuga ipsa ipsam, iusto minus necessitatibus officiis perspiciatis praesentium quasi qui, quis recusandae
+        sapiente sit voluptates! Dignissimos illo repudiandae soluta? Ad aspernatur aut beatae corporis dolore minima
+        molestias optio perferendis perspiciatis quas, recusandae repellat similique vitae? A aspernatur assumenda
+        consequatur, deleniti dicta inventore laboriosam non, omnis perspiciatis quidem repellendus sed vitae? Beatae
+        delectus facere maiores pariatur possimus quo ratione veritatis? At distinctio ea eius fuga harum impedit minus
+        molestiae nobis obcaecati optio pariatur quaerat quibusdam quisquam repudiandae similique tempore temporibus,
+        vel voluptas. Autem consequuntur dolorum error, eum facere harum illum ipsum maxime nihil nostrum nulla,
+        pariatur quae ratione repellat sapiente, sequi sint sit. Ad aliquid consequatur delectus doloremque dolores eius
+        esse expedita harum, neque optio placeat quod, rem repellendus saepe sit? Accusamus beatae consequatur corporis
+        earum eligendi facilis, fugiat fugit incidunt laboriosam, magnam, natus necessitatibus nesciunt numquam possimus
+        quia quos ut voluptas! A at doloremque magnam numquam odit provident ratione sapiente sint sit suscipit. Aut cum
+        debitis, delectus deleniti deserunt et nam necessitatibus porro quas repellendus reprehenderit sed sint
+        temporibus! Architecto magni modi molestiae, quis tempore ullam. Debitis doloribus, eaque error eveniet expedita
+        facilis illum maiores mollitia, natus odit quasi qui sed similique ullam unde?
+    </div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h2 style="text-align: center">Direction-Column</h2>
+<h3 style="text-align: center">It arranges the items along the cross axis from top to bottom.</h3>
+<div class="flexbox1">
+    <div class="box1">145 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores nam neque odit
+        pariatur qui vitae. Amet aspernatur corporis culpa dignissimos eaque eligendi, ex expedita illum itaque, minus
+        natus nisi nostrum nulla odio pariatur porro praesentium quaerat quibusdam rerum sapiente sequi tempore vitae!
+        Accusamus doloribus enim itaque iure mollitia officiis possimus quos sequi temporibus voluptatum? Aperiam
+        assumenda at cum delectus distinctio doloribus facere facilis fuga fugit impedit laboriosam maxime mollitia,
+        natus nisi provident, quaerat quasi repellendus temporibus. Dignissimos eligendi enim eos esse laboriosam modi
+        quae quidem voluptas? Ad adipisci asperiores pariatur porro quae quos? A animi asperiores assumenda debitis
+        deserunt dignissimos dolore, ipsa minus nemo nobis officiis quod recusandae similique. Asperiores assumenda
+        commodi dolore eaque earum explicabo impedit labore laboriosam libero, mollitia, necessitatibus nihil nisi nobis
+        obcaecati reiciendis tempore unde voluptatibus. Accusamus ad aliquam animi architecto assumenda, autem beatae
+        deserunt dicta dolore doloribus ducimus eveniet harum illo ipsam, magni natus necessitatibus nesciunt non
+        officia quibusdam quis quo repudiandae sed. Aut cum cumque perferendis. Adipisci assumenda debitis distinctio
+        dolor earum eius minus molestiae quia sed. Ab aut beatae deleniti deserunt doloremque eius eligendi, ex fugiat
+        id illo incidunt iure laboriosam laudantium magni modi mollitia, nam nihil odit perspiciatis porro, possimus
+        quas qui quibusdam quidem quisquam quos reiciendis! Blanditiis cum delectus dicta dignissimos distinctio
+        doloribus eaque eum eveniet explicabo facere fugiat libero, nobis odio optio possimus quibusdam reprehenderit
+        repudiandae ut veritatis voluptates. Aliquid, architecto deleniti ea explicabo hic illo qui tempora voluptates.
+        Aliquid architecto deleniti eius eum expedita hic, id molestias officia optio pariatur perspiciatis possimus
+        praesentium quas ratione reprehenderit similique voluptatem! Alias asperiores, beatae delectus doloribus dolorum
+        et eveniet expedita facere harum, ipsum laboriosam nobis odio quia repellendus reprehenderit, temporibus totam
+        veniam vitae? Accusamus aperiam aspernatur aut consectetur cum deserunt dignissimos, distinctio doloribus
+        ducimus ex exercitationem hic id in labore necessitatibus nobis numquam pariatur porro provident qui quidem quo
+        reprehenderit sed sit tempora vero vitae voluptatum? Aliquam assumenda dignissimos earum eum ex excepturi
+        expedita facere fugit hic id, illo illum, impedit ipsam iusto libero maxime neque omnis, quaerat sunt suscipit!
+        Beatae commodi deleniti ea eaque fugiat inventore iure labore maiores, nobis, perferendis porro recusandae.
+        Animi error magnam, mollitia nam nihil optio quam. Cumque deserunt nihil optio perferendis possimus, rem
+        tempora! Accusantium ad alias aperiam, asperiores at doloremque dolores ducimus facilis incidunt libero, nemo
+        neque nesciunt nostrum officiis praesentium quae quaerat quibusdam sint tenetur ut. Aliquid animi at beatae
+        blanditiis debitis, esse eum illum ipsum labore maiores minus molestiae obcaecati omnis quod repudiandae rerum
+        unde veritatis voluptas voluptate voluptates. Iure labore quisquam quo sint suscipit. Alias atque commodi
+        deleniti deserunt dolore dolores, ducimus eos et exercitationem facere facilis fugiat in ipsa laudantium libero
+        magnam molestiae nesciunt nihil omnis perspiciatis quaerat quasi reprehenderit suscipit tempora tenetur totam
+        ullam velit? Ab autem beatae excepturi in inventore, minus mollitia nisi nostrum numquam perspiciatis quia quis
+        quisquam recusandae repellat soluta sunt voluptate. Blanditiis, consectetur culpa dolores ipsum molestias
+        sapiente ut voluptatibus! Animi corporis delectus dolorem eaque earum eveniet excepturi explicabo ipsum iste
+        laudantium nihil odio perspiciatis quidem, sapiente sequi tempora tenetur unde veritatis vitae voluptas?
+        Doloribus excepturi maxime placeat quaerat reiciendis repellat repellendus. Accusantium adipisci alias amet
+        aperiam atque cupiditate deserunt dolorum eius eligendi enim illo ipsam provident, quis quos reprehenderit
+        repudiandae totam. Architecto asperiores assumenda blanditiis corporis deserunt excepturi ipsum iste maiores
+        nostrum, optio possimus quaerat quibusdam reiciendis repudiandae, ullam unde voluptates! Culpa deleniti dolores
+        est iure placeat, velit voluptas! Consectetur, dolore error incidunt iusto laborum magni, maiores nam
+        necessitatibus omnis quae quas quis quisquam repellendus similique, sunt unde veritatis voluptatum. Amet aut
+        facere harum impedit incidunt ipsa iusto minus nobis officiis, optio! At eos itaque magni maiores minus quos
+        voluptatem. Accusamus at aut autem delectus eligendi eum, facilis impedit magni nisi placeat rerum ullam vero
+        voluptas! Ab, ad animi autem deleniti dicta distinctio dolorem ea eligendi enim esse est ex explicabo, fugiat
+        harum id illo inventore laboriosam libero magnam magni minima nihil perferendis, possimus quae quasi quis quo
+        sapiente. Aperiam distinctio error fugiat minima, obcaecati quo repellendus similique sit voluptate! Amet at
+        dignissimos distinctio doloremque esse excepturi inventore minima quibusdam suscipit veritatis. Aperiam eaque
+        facere nam, repudiandae sit velit veniam? Aliquam aliquid consectetur cum eaque, itaque magni nam non porro quas
+        tempore. Adipisci, blanditiis!
+    </div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<h2 style="text-align: center">Direction-Row-reverse</h2>
+<h3 style="text-align: center">It arranges the items along the main axis from right to left.</h3>
+<div class="flexbox2">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+</div>
+
+<h2 style="text-align: center">Direction-Column-reverse</h2>
+<h3 style="text-align: center">It arranges the items along the cross axis from bottom to top.</h3>
+<div class="flexbox3">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+</div>
+</body>
+</html>

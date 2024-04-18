@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difference between CSS display flex & inline-flex</title>
+</head>
+<body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .flexbox{
+       border: 2px solid black;
+       display: flex;
+    }
+    .box1{
+        background-color: #c175c9;
+        padding: 10px;
+    }
+    .box2{
+        background-color: #f85672;
+        padding: 10px;
+    }
+    .box3{
+        background-color: #30e36e;
+        padding: 10px;
+    }
+
+    .inlineflex{
+        border: 2px solid black;
+        display: inline-flex;
+    }
+</style>
+
+<h2 style="text-align: center">Flex</h2>
+<div class="flexbox">
+    <div class="box1">145</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<div class="flexbox">
+    <div class="box1">145</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+<h2 style="text-align: center">Inline Flex</h2>
+<div class="inlineflex">
+    <div class="box1">145</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+<div class="inlineflex">
+    <div class="box1">145</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+
+</body>
+</html>
