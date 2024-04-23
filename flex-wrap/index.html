@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wrap</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .a, .b, .c {
+        padding: 25px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .a {
+        background-color: #c175c9;
+    }
+
+    .b {
+        background-color: #f85672;
+    }
+
+    .c {
+        background-color: #30e36e;
+    }
+
+    .flexiblebox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexiblebox1 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .flexiblebox2 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .Wrapper {
+        width: 40%;
+        max-width: 500%;
+        margin: 30px auto;
+        border: 2px solid black;
+    }
+
+</style>
+
+flex-wrap is a powerful tool in Flexbox that allows developers to create versatile and adaptive layouts that can
+gracefully handle varying content and screen sizes, enhancing the user experience across different devices and
+environments.
+
+<h1 style="text-align: center">Wrap</h1>
+<div class="Wrapper">
+    <div class="flexiblebox">
+        <p class="a">A</p>
+        <p class="b">B</p>
+        <p class="c">C</p>
+    </div>
+</div>
+
+
+<h1 style="text-align: center">Wrap-reverse</h1>
+<div class="Wrapper">
+    <div class="flexiblebox1">
+        <p class="a">A</p>
+        <p class="b">B</p>
+        <p class="c">C</p>
+    </div>
+</div>
+
+<h1 style="text-align: center">No Wrap(default)</h1>
+<div class="Wrapper">
+    <div class="flexiblebox2">
+        <p class="a">A</p>
+        <p class="b">B</p>
+        <p class="c">C</p>
+    </div>
+</div>
+
+</body>
+</html>

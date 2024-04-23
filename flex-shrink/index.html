@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Shrink</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .flex-box{
+    display: flex;
+  }
+  .box1, .box2, .box3, .box4{
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    width: 200px;
+  }
+  .box1{
+    background-color: #c175c9;
+    flex-shrink: 1;//. By default, the value is 1, meaning the item can shrink equally with other flex items.
+
+  }
+  .box2{
+    background-color: #f85672;
+    flex-shrink: 2;
+
+  }
+  .box3{
+    background-color: #30e36e;
+    flex-shrink: 3;
+  }
+  .box4{
+    background-color: rgba(91, 33, 63, 0.53);
+    flex-shrink: 4;
+  }
+
+</style>
+
+<body>
+<h1 style="text-align: center">flex-shrink</h1>
+<h3>The flex-shrink property is used within flexbox layouts to define how the item is shrunk if there is not enough space to display the item completely.</h3>
+<div class="wrapper">
+  <div class="flex-box">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+  </div>
+</div>
+
+</body>
+</html>

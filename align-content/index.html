@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>align content </title>
+</head>
+<body>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+        padding: 10px;
+        width: 80px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .box1 {
+        background-color: #c175c9;
+    }
+
+    .box2 {
+        background-color: #f85672;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+    }
+
+    .box4 {
+        background-color: rgba(91, 33, 63, 0.53);
+    }
+
+    .box5 {
+        background-color: #c175c9;
+    }
+
+    .box6 {
+        background-color: #f85672;
+    }
+
+    .box7 {
+        background-color: #30e36e;
+    }
+    .flexbox{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: stretch;//default
+
+    }
+    .wrapper{
+        border: 2px solid black;
+        width: 500px;
+    }
+
+    .flexbox1{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: flex-start;
+    }
+    .flexbox2{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: flex-end;
+    }
+    .flexbox3{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: center;
+    }
+    .flexbox4{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: space-between;}
+
+    .flexbox5{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: space-around;
+    }
+    .flexbox6{
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        //before we align contenct we need to set flex wrap;
+        align-content: space-evenly;
+
+    }
+
+</style>
+
+<h1 style="align-content: center"> stretch</h1>
+<div class="wrapper">
+<div class="flexbox">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+</div>
+</div>
+
+<h1 style="align-content: center"> flex-start</h1>
+<div class="wrapper">
+    <div class="flexbox1">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+<h1 style="align-content: center"> flex-end</h1>
+<div class="wrapper">
+    <div class="flexbox2">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+<h1 style="align-content: center"> center</h1>
+<div class="wrapper">
+    <div class="flexbox3">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+<h1 style="align-content: center"> space-between</h1>
+<div class="wrapper">
+    <div class="flexbox4">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+<h1 style="align-content: center"> space-around</h1>
+<div class="wrapper">
+    <div class="flexbox5">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+
+<h1 style="align-content: center"> space-evenly</h1>
+<div class="wrapper">
+    <div class="flexbox6">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+
+</body>
+</html>

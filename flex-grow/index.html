@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Grow</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .one, .two, .three {
+        padding: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .four, .five, .six {
+        padding: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .a, .b, .c {
+        padding: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .a {
+        background-color: #c175c9;
+    }
+
+    .b {
+        background-color: #f85672;
+    }
+
+    .c {
+        background-color: #30e36e;
+    }
+
+    .one {
+        background-color: #c175c9;
+        flex-grow: 1;
+    }
+
+    .two {
+        background-color: #f85672;
+        flex-grow: 2;
+    }
+
+    .three {
+        background-color: #30e36e;
+        flex-grow: 3;
+    }
+
+    .four {
+        background-color: #c175c9;
+        flex-grow: 1;
+    }
+
+    .five {
+        background-color: #f85672;
+        flex-grow: 1;
+    }
+
+    .six {
+        background-color: #30e36e;
+
+    }
+
+    .flexiblebox {
+        display: flex;
+    }
+
+    .Wrapper {
+        width: 70%;
+        max-width: 500%;
+        margin: 30px auto;
+        border: 2px solid black;
+
+    }
+
+</style>
+
+<!--------------------- we use flex-grow to control the distribution of space within a flex container. (available space fill) default value 1-------------- -->
+
+<h1 style="text-align: center">Flex Grow</h1>
+<p style="text-align: left">Flex-grow is particularly useful for creating flexible layouts where certain items should
+    expand to fill available space while others remain fixed in size. It provides a straightforward way to control the
+    distribution of space within a flex container based on the importance or priority of its items. </p>
+<div class="Wrapper">
+    <div class="flexiblebox">
+        <p class="a">A</p>
+        <p class="b">B</p>
+        <p class="c">C</p>
+    </div>
+</div>
+
+
+<div class="Wrapper">
+    <div class="flexiblebox">
+        <p class="one">A</p>
+        <p class="two">B</p>
+        <p class="three">C</p>
+    </div>
+</div>
+
+<div class="Wrapper">
+    <div class="flexiblebox">
+        <p class="four">A</p>
+        <p class="five">B</p>
+        <p class="six">C</p>
+    </div>
+</div>
+
+</body>
+</html>

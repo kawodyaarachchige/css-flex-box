@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .box1, .box2, .box3, .box4 {
+
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+        flex-grow: 1;// used to grow the flex item
+
+    }
+
+    .box1 {
+        background-color: #c175c9;
+        flex-basis: 100px;// used to set the initial size of the flex item
+    }
+
+    .box2 {
+        background-color: #f85672;
+        flex-basis: 200px;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+        flex-basis: 300px;
+    }
+
+    .box4 {
+        background-color: rgba(91, 33, 63, 0.53);
+        flex-basis: 400px;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-wrap: wrap;// used to wrap the flex items if they don't fit in the container
+    }
+
+</style>
+<body>
+<h1 style="text-align: center">flex-basis</h1>
+<h3>The flex-basis property is used within flexbox layouts to define the initial size of a flex item along the main axis
+    before any remaining space is distributed among the flex items.</h3>
+<div class="wrapper">
+    <div class="flex-box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</div>
+
+</body>
+</html>

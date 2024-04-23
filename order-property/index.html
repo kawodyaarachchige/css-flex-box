@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100px;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .box1 {
+        background-color: #c175c9;
+        order: 3;
+    }
+
+    .box2 {
+        background-color: #f85672;
+        order: 1;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+        order: 2;
+    }
+
+    .box4 {
+        background-color: rgba(91, 33, 63, 0.53);
+        order: 4;
+    }
+
+    .flex-box {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+<h1 style="text-align: center">Order Property</h1>
+<h3>
+    The order property in CSS is used within flexbox layouts to specify the order in which flex items are displayed
+    along the main axis. By default, flex items are displayed in the order they appear in the source code. However, the
+    order property allows you to change this order, thereby controlling the visual presentation of flex items.</h3>
+<br>
+<div class="wrapper">
+    <div class="flex-box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</div>
+
+</body>
+</html>

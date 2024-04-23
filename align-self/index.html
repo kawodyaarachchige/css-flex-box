@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        border: #030303 4px solid;
+
+    }
+
+    .flex-box {
+        display: flex;
+        height: 450px;
+        align-items: center;
+    / / parentge widiyt child elements will be center
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .box1 {
+        background-color: #c175c9;
+        align-self: flex-start;
+    }
+
+    .box2 {
+        background-color: #f85672;
+        align-self: flex-end;
+    }
+
+    .box3 {
+        background-color: #30e36e;
+        align-self: stretch;
+    }
+
+    .box4 {
+        background-color: rgba(91, 33, 63, 0.53);
+    }
+
+    .box5 {
+        background-color: #c175c9;
+    }
+
+    .box6 {
+        background-color: #f85672;
+    }
+
+    .box7 {
+        background-color: #30e36e;
+    }
+
+</style>
+<body>
+<h1 style="text-align: center">align-self</h1>
+<h3>
+    The align-self property in CSS is used within flexbox layouts to control the alignment of individual flex items
+    along the cross axis, overriding the alignment set by the align-items property on the flex container for that
+    specific item.</h3>
+<br>
+<div class="wrapper">
+    <div class="flex-box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+</div>
+
+</body>
+</html>
